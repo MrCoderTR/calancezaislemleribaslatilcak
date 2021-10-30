@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Hacimsel Parçacık Akışı</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'>
+        <link href="flow.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div id="error">Ne yazık ki, tarayıcınız gerekli tüm özellikleri desteklemiyor. hala <a href="https://discord.gg/rmVPHGfp3y">Discord Sunucumuzu Görüntüleybilirsiniz!</a></div>
+
+        <canvas id="render" width="1" height="1" style="background: black;"></canvas>
+
+        <div id="gui">
+
+            <div id="count-wrapper">
+                <span class="label">PARÇA SAYISI</span>
+                <div id="count-16">66K</div><div id="count-17">131K</div><div id="count-18">262K</div><div id="count-19">524K</div><div id="count-20">1M</div><div id="count-21">2M</div>
+            </div>
+
+            <div id="speed-wrapper">
+                <span class="label">HIZ</span><div id="speed-slider" class="slider"></div>
+            </div>
+
+            <div id="turbulence-wrapper">
+                <span class="label">TURBULANS</span><div id="turbulence-slider" class="slider"></div>
+            </div>
+
+            <div id="color-wrapper">
+                <div id="color-label">RENK</div>
+                <canvas id="picker" width="170" height="170"></canvas>
+            </div>
+
+        </div>
+
+        <div id="footer"><a href="https://craxy-funs.glitch.me/">Geri Dön</a> | <a href="https://discord.gg/rmVPHGfp3y">Discord Sunucumuz</a></div>
+
+        <script src="shared.js"></script>
+        <script src="ui.js"></script>
+        <script src="flow.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

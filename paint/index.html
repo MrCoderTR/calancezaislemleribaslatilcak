@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sıvı Boya - Craxy Funs</title>
+
+        <meta name="description" content="Fluid paint simulation">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="paint.css">
+    </head>
+
+    <body>
+        <script type="text/template" id="main">
+            <div id="ui">
+                <div id="clear-button" class="button">Temizle</div><div id="save-button" class="button">Kaydet</div>
+
+                <div class="control-label">Kalite</div>
+                <div class="buttons" id="qualities"></div>
+                <div style="clear:both"></div>
+
+                <div class="control-label">Boya Modu</div>
+                <div class="buttons" id="models"></div>
+                <div style="clear:both"></div>
+
+                <div class="control-label">Boya Akışkanlığı</div>
+                <div id="fluidity-slider" class="slider"></div>
+
+                <div class="control-label">Kıl Sayısı</div>
+                <div id="bristles-slider" class="slider"></div>
+
+                <div class="control-label">Fırça boyutu</div>
+                <div id="size-slider" class="slider"></div>
+
+                <div class="control-label">Boya rengi</div>
+
+                <div id="undo-button" class="button">Geri Al</div><div id="redo-button" class="button">İleri Al</div>
+            </div>
+
+
+            <div id="instructions">
+                <span>Tıklayın ve basılı tutun</span> boyamak <br/>
+                <span>Taslak</span> fırçayı değiştirmek size<br/>
+                <span>Boşluk + sürükle</span> kaydırmak<br/>
+                <span>Kenarları sürükleyin</span> tuvali yeniden boyutlandırmak için
+            </div>
+
+            <div id="footer">
+                <a href="https://craxy-funs.glitch.me">Geri Dön</a> | <a href="https://discord.gg/rmVPHGfp3y">Discord Sunucumuz</a>
+            </div>
+        </script>
+
+        <div id="placeholder"></div>
+
+
+        <script src="wrappedgl.js"></script>
+        <script src="utilities.js"></script>
+        <script src="rectangle.js"></script>
+        <script src="brush.js"></script>
+        <script src="simulator.js"></script>
+        <script src="colorpicker.js"></script>
+        <script src="slider.js"></script>
+        <script src="buttons.js"></script>
+        <!--<script src="brushviewer.js"></script>-->
+        <script src="paint.js"></script>
+
+        <script>
+            'use strict';
+
+            var canvas = document.createElement('canvas');
+            var wgl = WrappedGL.create(canvas);
+
+            if (wgl !== null && wgl.hasFloatTextureSupport()) { //required features are supported
+                document.body.appendChild(canvas);
+                document.getElementById('placeholder').outerHTML = document.getElementById('main').innerHTML;
+                var painter = new Paint(canvas, wgl);
+            } else { //required features unsupported
+                document.getElementById('placeholder').outerHTML = document.getElementById('no-support').innerHTML;
+
+                if (wgl === null) {
+                    document.getElementById('error').innerHTML = 'Unfortunately, your browser does not support WebGL.';
+                } else {
+                    document.getElementById('error').innerHTML = 'Unfortunately, your browser does not support WebGL floating point textures.';
+                }
+            }
+        </script>
+
+    </body>
+</html>

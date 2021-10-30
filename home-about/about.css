@@ -1,0 +1,397 @@
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+a
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #800080;
+}
+a:active
+{
+   color: #FF0000;
+}
+a:hover
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+input:focus, textarea:focus, select:focus
+{
+   outline: none;
+}
+#wb_Image1
+{
+   vertical-align: top;
+}
+#Image1
+{
+   border-width: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Heading1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#Heading1
+{
+   color: #000000;
+   font-family: "Comic Sans MS";
+   font-weight: bold;
+   font-style: normal;
+   font-size: 32px;
+   margin: 0;
+   text-align: left;
+}
+#wb_Marquee1 
+{
+   background-color: #EEEEEE;
+   background-image: none;
+   border: 1px solid #C0C0C0;
+   border-radius: 0px;
+   overflow-y: hidden;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Marquee1 div
+{
+   text-align: center;
+}
+#wb_Marquee1
+{
+   overflow: hidden;
+   position: relative;
+}
+#Marquee1
+{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   -webkit-animation: Marquee1-marquee 5000ms linear infinite;
+   animation: Marquee1-marquee 5000ms linear infinite;
+}
+@-webkit-keyframes Marquee1-marquee
+{
+   0%
+   {
+   -webkit-transform: translateX(100%);
+   }
+   100%
+   {
+   -webkit-transform: translateX(-100%);
+   }
+}
+@keyframes Marquee1-marquee
+{
+   0%
+   {
+   transform: translateX(100%);
+   }
+   100%
+   {
+   transform: translateX(-100%);
+   }
+}
+#wb_Line1
+{
+   font-size: 0;
+}
+#Line1
+{
+   border-width: 0;
+   height: 87px;
+   width: 44px;
+}
+#wb_IconFont1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #245580;
+   border-radius: 0px;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   vertical-align: top;
+}
+#IconFont1
+{
+   height: 48px;
+   width: 58px;
+}
+#IconFont1 i
+{
+   color: #FF0000;
+   display: inline-block;
+   font-size: 48px;
+   line-height: 48px;
+   vertical-align: middle;
+   width: 47px;
+}
+#IconFont1:hover i
+{
+   color: #DC143C;
+}
+#wb_Heading2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#Heading2
+{
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 32px;
+   margin: 0;
+   text-align: left;
+}
+#wb_Image2
+{
+   vertical-align: top;
+}
+#Image2
+{
+   border-width: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Heading3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#Heading3
+{
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 32px;
+   margin: 0;
+   text-align: left;
+}
+#wb_PanelMenu1 a, #PanelMenu1_markup li a
+{
+   display: block;
+   text-align: center;
+   vertical-align: middle;
+}
+#PanelMenu1_markup
+{
+   display: none;
+   margin: 0;
+   padding: 0;
+}
+#PanelMenu1_panel #PanelMenu1_markup
+{
+   display: block;
+}
+#PanelMenu1_markup ul
+{
+   list-style: none;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+#PanelMenu1_markup li a, #PanelMenu1_markup li a:hover
+{
+   padding: 10px 10px 10px 10px;
+   box-shadow: none;
+}
+#PanelMenu1_markup .divider
+{
+   height: 1px;
+   margin: 9px 0;
+   overflow: hidden;
+   background-color: #2E2E2E;
+}
+#PanelMenu1_panel
+{
+   display: none;
+   position: fixed;
+   top: 0;
+   height: 100%;
+   width: 250px;
+   z-index: 9999;
+}
+#PanelMenu1_markup li a
+{
+   color: #F7F7F7;
+   border: 1px solid #2E2E2E;
+   background-color: #3E3E3E;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   font-style: normal;
+   text-decoration: none;
+}
+#wb_PanelMenu1 a
+{
+   color: #F7F7F7;
+   border: 1px solid #2E2E2E;
+   border-radius: 0px;
+   background-color: #3E3E3E;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   font-style: normal;
+   text-decoration: none;
+   text-align: center;
+}
+#PanelMenu1_markup li a:hover
+{
+   color: #F7F7F7;
+   background-color: #484848;
+   border: 1px solid #2E2E2E;
+}
+#wb_PanelMenu1 a:hover
+{
+   color: #F7F7F7;
+   background-color: #484848;
+   border: 1px solid #2E2E2E;
+}
+#PanelMenu1_panel
+{
+   background-color: #3E3E3E;
+   overflow-y: auto;
+}
+#PanelMenu1
+{
+   padding-left: 32px;
+}
+#PanelMenu1:after
+{
+   position: absolute;
+   top: 50%;
+   left: 16px;
+   width: 16px;
+   height: 16px;
+   margin-top: -8px;
+   content: "\f036";
+   display: inline-block;
+   font-family: FontAwesome;
+   font-size: 16px;
+   line-height: 16px;
+}
+#PanelMenu1
+{
+   line-height: 36px;
+   width: 78px;
+   height: 36px;
+   position: absolute;
+   z-index: 999;
+}
+#PanelMenu1_markup ul li i
+{
+   font-size: 16px;
+   padding: 0px 10px 0px 0px;
+   vertical-align: middle;
+   width: 16px;
+}
+#PanelMenu1_markup span
+{
+   display: inline-block;
+   height: 16px;
+   vertical-align: middle;
+   line-height: 16px;
+}
+#wb_IconFont2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #245580;
+   border-radius: 0px;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   vertical-align: top;
+}
+#IconFont2
+{
+   height: 100px;
+   width: 97px;
+}
+#IconFont2 i
+{
+   color: #0963AD;
+   display: inline-block;
+   font-size: 97px;
+   line-height: 100px;
+   vertical-align: middle;
+   width: 96px;
+}
+#IconFont2:hover i
+{
+   color: #337AB7;
+}
+#wb_Image3
+{
+   vertical-align: top;
+}
+#Image3
+{
+   border-width: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Heading4
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#Heading4
+{
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 32px;
+   margin: 0;
+   text-align: left;
+}
